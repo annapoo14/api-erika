@@ -1,0 +1,46 @@
+[
+{
+    "nama": "Erika Nurhasnah",
+    "umur": 20,
+    "nim": "2217020014",
+    "lulus": true,
+    "hobby": [
+        "running",
+        "bersepeda"
+    ],
+    "pembimbing": {
+    "pembimbing1":"pak teguh",
+    "pembimbing2":"pak domi"
+    }
+},
+
+{
+    "nama": "Rina Sopiana Hasibuan",
+    "umur": 21,
+    "nim": "2217020006",
+    "lulus": true,
+    "hobby": [
+        "membaca",
+        "gaming"
+    ],
+    "pembimbing": {
+    "pembimbing1":"pak yusuf",
+    "pembimbing2":"pak haditya"
+    }
+},
+
+{
+    "nama": "Arya Mohan",
+    "umur": 22,
+    "nim": "2217020010",
+    "lulus": true,
+    "hobby": [
+        "membaca",
+        "gaming"
+    ],
+    "pembimbing": {
+    "pembimbing1":"bu novi",
+    "pembimbing2":"bu ozzy"
+    }
+}
+]
