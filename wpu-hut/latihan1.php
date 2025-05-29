@@ -1,11 +1,23 @@
+<?php
+$data = file_get_contents('data/pizza.json');
+$menu = json_decode($data, true);
+$menu = $menu["menu"];
+?>
+
+<!doctype html>
 <html lang="en">
-  <head>
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WPU Hut</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>WPU-Hut</title>
+</head>
+
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -21,37 +33,42 @@
                 </div>
             </div>
     </nav>
+    <div class="container">
 
-<div class="container">
-
-    <div class="row mt-3">
-        <div class="col">
-            <h1>All Menu</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-        <div class="card">
-            <img src="img/menu-mkn/american-favourite.jpg" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title">American Favourite</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5 class="card-title">Rp. 60.000,-</h5>
-                <a href="#" class="btn btn-primary">Pesan Sekarang</a>
-            </div>
+        <div class="row mt-3">
+            <div class="col">
             </div>
         </div>
+
+
+        <div class="row">
+
+        <?php foreach($menu as $row) : ?>
+
+            <div class="col-md-4">
+                <div class="card mb-3" >
+                    <img src="img/menu/<?=$row["gambar"]?>" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><?=$row["nama"]?></h5>
+                        <p class="card-text"><?=$row["deskripsi"]?></p>
+                        <h5 class="card-title">Rp.<?=$row["harga"]?>,-</h5>
+                        <a href="#" class="btn btn-primary">Pesan sekarang</a>
+                    </div>
+                </div>
+
+            </div>
+
+          <?php endforeach ;?>  
+        </div>
+
     </div>
 
 
-</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  </body>
 </html>
