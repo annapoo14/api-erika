@@ -49,6 +49,62 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
     <link rel="stylesheet" href="css/style.css">
 
     <title>My Portfolio</title>
+    
+  <style>
+  /* Warna dasar */
+  .bg-pink {
+    background-color:rgb(238, 118, 198) !important; 
+  }
+
+  .bg-purple {
+    background-color: #d8b4f8 !important; 
+  }
+
+  .navbar {
+    background-color:rgb(245, 42, 177) !important;
+  }
+
+  .jumbotron {
+    background: linear-gradient(to right, #ffb6c1, #d8b4f8);
+    color: #4a4a4a;
+  }
+
+  .about, .portfolio, .contact {
+    background-color:rgb(221, 189, 203);
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title, .nav-link, .navbar-brand, h2 {
+    color: #7a278f;
+  }
+
+  .btn-primary {
+    background-color: #d8b4f8;
+    border-color: #d8b4f8;
+  }
+
+  .btn-primary:hover {
+    background-color: #c084fc;
+    border-color: #c084fc;
+  }
+
+  footer {
+    background-color: #7a278f;
+    color: white;
+  }
+
+  .ig-thumbnail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 8px;
+  }
+</style>
 
   </head>
   <body>
@@ -68,7 +124,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#social">Sosial Media</a>
+              <a class="nav-link" href="#social">Social Media</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -133,6 +189,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
               <div class="col-md-8">
                 <h5><?= $channelName; ?></h5>
                 <p>@yoyoi-liak</p>
+                <p><?= $subscriber; ?> Subscribers</p>
+                <div class="g-ytsubscribe" data-channelid="UCvh5ndmeaPVwrog3kLC93ow" data-layout="default" data-count="default"></div>
               </div>
             </div>
             <div class="row mt-3 pb-3">
@@ -164,7 +222,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
                     <img src="img/thumbs/2.png">
                   </div>
                   <div class="ig-thumbnail">
-                    <img src="img/thumbs/mapping.png">
+                    <img src="img/thumbs/9.png">
                   </div>
                 </div>
               </div>
@@ -185,7 +243,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/family.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/8.png" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">Kolase inspirasi visual yang saya buat untuk menuangkan perasaan dan kreativitas dalam bentuk desain. 
                   Setiap gambar memiliki makna tersendiri dan menggambarkan suasana hati saya.</p>
@@ -195,7 +253,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/naruto1.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/10.png" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">Ilustrasi digital yang saya buat dari karakter favorit saya. 
                   Menggambar merupakan salah satu cara saya mengekspresikan imajinasi dan hobi saya sejak kecil.</p>
@@ -205,7 +263,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/mapping.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/9.png" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">Perencanaan studi saya selama kuliah. 
                   Gambar ini saya desain sendiri untuk membantu memvisualisasikan perjalanan akademik saya dari semester 1 hingga 8.</p>
@@ -226,7 +284,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
           </div> 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/sky.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/11.png" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">Keseharian saya tidak lepas dari mengabadikan keindahan sekitar. 
                   Saya suka memotret langit, bunga, dan suasana alam sebagai bentuk apresiasi terhadap hal-hal kecil yang menenangkan.</p>
@@ -309,7 +367,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Wpu-api-portfolio &copy; 2025.</p>
+            <p>Wpu portfolio EN &copy; 2025.</p>
           </div>
         </div>
       </div>
