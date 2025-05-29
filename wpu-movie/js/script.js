@@ -1,5 +1,3 @@
-$.GetJSON
-
 function searchMovie() {
   $("#movie-list").html(``);
 
@@ -49,4 +47,41 @@ $("#search-input").on("keyup", function (e) {
   if (e.which === 13) {
     searchMovie();
   }
+});
+
+$("#movie-list").on("click", ".see-detail", function () {
+  
+    $.ajax({
+        url: "http://omdbapi.com",
+        dataType: "json",
+        type: "get",
+        data: {
+            'apikey': "f10411b4",
+            'i': $(this).data('id')
+        },
+        success: function (movie) {
+            if(movie.Response == "True") {
+                
+                $('#modal-body').html(`
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                 <img src="`+ movie.Poster +`" class="img-fluid">
+                            </div>
+
+                            <div class="col-md-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><h3>`+ movie.Title +`</h3></li>
+                                    <li class="list-group-item">Released :`+ movie.Released +`</li>
+                                    <li class="list-group-item">Genre :`+ movie.Genre +`</li>
+                                    <li class="list-group-item">Director :`+ movie.Director +`</li>
+                                    <li class="list-group-item">Actors :`+ movie.Actors +`</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            }
+        }
+    });
 });
