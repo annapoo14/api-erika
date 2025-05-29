@@ -22,16 +22,10 @@ $result = get_CURL($urlLatestVideo);
 $latestVideoId = $result['items'][0]['id']['videoId'];
 
 // intragram API
-// $clientId = '1848337862683204';
-// $acces_token='EAAaRDbG66kQBOwVLYPPTP3RPRDoKnTHg4HLNChrf8lgnMDoYYYqNA3bJRBgw52ZCh7Mg1pu4g4VpZC1IfLAroJyhsb333WfXi9376VQ2nKhVFIgrtVPf85pg9EEoW2dHRZCKxoQPivyTVAUuXwFbaZCnehATaNRhjg7NcWuqY1QgADddZAgC9UciiyeWecpdo';
-
-// $result = get_CURL('https://api,instagram.com/v1/users/self?
-// access_token=EAAaRDbG66kQBOwVLYPPTP3RPRDoKnTHg4HLNChrf8lgnMDoYYYqNA3bJRBgw52ZCh7Mg1pu4g4VpZC1IfLAroJyhsb333WfXi9376VQ2nKhVFIgrtVPf85pg9EEoW2dHRZCKxoQPivyTVAUuXwFbaZCnehATaNRhjg7NcWuqY1QgADddZAgC9UciiyeWecpdo');
-
-// $result = get_CURL('https://api,instagram.com/v1/users/self?access_token=EAAaRDbG66kQBOwVLYPPTP3RPRDoKnTHg4HLNChrf8lgnMDoYYYqNA3bJRBgw52ZCh7Mg1pu4g4VpZC1IfLAroJyhsb333WfXi9376VQ2nKhVFIgrtVPf85pg9EEoW2dHRZCKxoQPivyTVAUuXwFbaZCnehATaNRhjg7NcWuqY1QgADddZAgC9UciiyeWecpdo');
-// $usernameIG = $result['data']['username'];
-// $profilePictureIG = $result['data']['profile_picture'];
-// $followersIG = $result['data']['counts']['followed_by'];
+$result = get_Curl($urlLatestVideo);
+$latestVideoId = $result['items'][0]['id']['videoId'];
+$clientID = "1277256363821289";
+$accessToken = "IGAASJqGvaSOlBZAE9qR2VzX3hKZATk3VFRWVm9wbmdqOTlUalNuUW4zT2JLOXVQUlcxTG5DdEVhek9hV2Q1cUxMRmZA0a21HLXhfVHRkSllHMzBXWE5TbHNualpnOXRPc3JINGpoQVFWYmxzcEVxMmZAyc1lEV2ZAyWTY3a0I4N3JYOAZDZD";
 
 ?>
 
