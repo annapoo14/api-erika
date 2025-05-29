@@ -29,8 +29,13 @@ $menu = $menu["menu"];
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">All Menu</a>
+                    <a class="nav-item nav-link" href="#">pizza</a>
+                    <a class="nav-item nav-link" href="#">pasta</a>
+                    <a class="nav-item nav-link" href="#">nasi</a>
+                    <a class="nav-item nav-link" href="#">minuman</a>
 
                 </div>
+                <div class="row" id="daftar-menu"></div>
             </div>
     </nav>
     <div class="container">

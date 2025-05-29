@@ -38,5 +38,6 @@ $('.nav-link').on('click', function () {
         });
 
         $('#daftar-menu').html(content);
+        $('#daftar-menu').php(content);
     });
 });
