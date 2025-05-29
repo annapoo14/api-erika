@@ -1,3 +1,5 @@
+$.GetJSON
+
 function searchMovie() {
   $("#movie-list").html(``);
 
