@@ -33,7 +33,7 @@ if (isset($_POST["register"])) {
      <title>From register</title>
 </head>
 
-<body background="img/bg/bck.png">
+<body style="background-color: #2E8B57">
 
      <div class="container">
           <div class="row my-5">

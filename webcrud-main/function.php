@@ -1,6 +1,6 @@
 <?php
 // Koneksi Database
-$koneksi = mysqli_connect("localhost", "root", "", "Data_siswa");
+$koneksi = mysqli_connect("localhost", "root", "", "webcrud");
 
 // membuat fungsi query dalam bentuk array
 function query($query)

@@ -62,12 +62,12 @@ if (isset($_POST['login'])) {
      <title>From Login</title>
 </head>
 
-<body background="img/bg/bck.png">
+<body style="background-color: #2E8B57">
 
      <div class="container">
           <div class="row my-5">
                <div class="col-md-6 text-center login bg-dark">
-                    <h4 class="fw-bold" style="color: white;">Login Dulu Banh:)</h4>
+                    <h4 class="fw-bold" style="color: white;">Login</h4>
                     <!-- Ini Error jika tidak bisa login -->
                     <?php if (isset($error)) : ?>
                     <?php echo '<script>alert("Username atau Password Salah!");</script>'; ?>

@@ -43,8 +43,7 @@ if (isset($_POST['dataSiswa'])) {
                         <tr>
                             <th width="40%">Alamat</th>
                             <td width="60%">' . $row['alamat'] . '</td>
-                        </tr>
-                        ';
+                        </tr>';
     }
     $output .= '</table></div>';
     // Tampilkan $output

@@ -66,9 +66,6 @@ if (isset($_POST['simpan'])) {
                               <a class="nav-link" aria-current="page" href="index.php">Home</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#about">About</a>
-                         </li>
-                         <li class="nav-item">
                               <a class="nav-link" href="logout.php">Logout</a>
                          </li>
                     </ul>
@@ -126,12 +123,9 @@ if (isset($_POST['simpan'])) {
                               <select class="form-select w-50" id="jurusan" name="jurusan">
                                    <option disabled selected value>--------------------------------------------Pilih
                                         Jurusan--------------------------------------------</option>
-                                   <option value="Teknik Jaringan Akses">Teknik Listrik</option>
-                                   <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
-                                   <option value="Multimedia">Multimedia</option>
-                                   <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-                                   <option value="Rekayasa Perangkat Lunak">Geomatika</option>
-                                   <option value="Rekayasa Perangkat Lunak">Mesin</option>
+                                   <option value="Teknik Jaringan Akses">IPA</option>
+                                   <option value="Teknik Komputer dan Jaringan">IPS</option>
+                                   <option value="Multimedia">IPK</option>
                               </select>
                          </div>
                          <div class="mb-3">
@@ -156,24 +150,6 @@ if (isset($_POST['simpan'])) {
           </div>
      </div>
      <!-- Close Container -->
-
-
-
-     <!-- Footer -->
-     <div class="container-fluid">
-          <div class="row bg-dark text-white text-center">
-               <div class="col my-2" id="about">
-                    <br><br><br>
-                    <h4 class="fw-bold text-uppercase">About</h4>
-
-                    <p>
-                         Pembuat:
-                         1. Farhan Ade Atalarik (2135038)
-                    </p>
-               </div>
-          </div>
-     </div>
-     <!-- Close Footer -->
 
      <!-- Bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

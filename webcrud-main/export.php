@@ -1,11 +1,6 @@
 <?php
-// Memanggil atau membutuhkan file function.php
 require 'function.php';
-
-// Menampilkan semua data dari table siswa berdasarkan nis secara Descending
 $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
-
-// Membuat nama file
 $filename = "data siswa-" . date('Ymd') . ".xls";
 
 // Kodingam untuk export ke excel

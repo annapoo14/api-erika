@@ -37,14 +37,14 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
      <!--My CSS -->
      <link rel="stylesheet" href="css/style.css">
 
-     <title>Home</title>
+     <title>Aplikasi Data Siswa</title>
 </head>
 
-<body background="img/bg/bck.png">
+<body style="background-color: #2E8B57">
      <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase">
           <div class="container">
-               <a class="navbar-brand" href="index.php">Sistem Admin Data Siswa</a>
+               <a class="navbar-brand" href="index.php">Sistem Data Siswa MAN 1 Padang Pariaman</a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,9 +53,6 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
                     <ul class="navbar-nav ms-auto">
                          <li class="nav-item">
                               <a class="nav-link" aria-current="page" href="#">Home</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#about">About</a>
                          </li>
                          <li class="nav-item">
                               <a class="nav-link" href="logout.php">Logout</a>
@@ -150,22 +147,6 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
      </div>
      <!-- Close Modal Detail Data -->
 
-     <!-- Footer -->
-     <div class="container-fluid">
-          <div class="row bg-dark text-white text-center">
-               <div class="col my-2" id="about">
-                    <h4 class="fw-bold text-uppercase">About</h4>
-                    <br><br><br>
-                    <p>
-                         Pembuat:
-                         1. Farhan Ade Atalarik (2135038)
-                    </p>
-               </div>
-          </div>
-     </div>
-
-     <!-- Close Footer -->
-
      <!-- Bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
@@ -218,7 +199,7 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
      gsap.to('.data_siswa', {
           duration: 1,
           delay: 0.6,
-          text: 'Data Siswa :)'
+          text: 'Daftar Siswa Lulusan'
      })
      gsap.from('.navbar', {
           duration: 1,
