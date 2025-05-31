@@ -82,8 +82,8 @@ $accessToken = "IGAASJqGvaSOlBZAE9qR2VzX3hKZATk3VFRWVm9wbmdqOTlUalNuUW4zT2JLOXVQ
   }
 
   .btn-primary:hover {
-    background-color: #c084fc;
-    border-color: #c084fc;
+    background-color:rgb(92, 46, 138);
+    border-color:rgb(173, 97, 248);
   }
 
   footer {
@@ -119,6 +119,9 @@ $accessToken = "IGAASJqGvaSOlBZAE9qR2VzX3hKZATk3VFRWVm9wbmdqOTlUalNuUW4zT2JLOXVQ
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#social">Social Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">My Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -225,6 +228,56 @@ $accessToken = "IGAASJqGvaSOlBZAE9qR2VzX3hKZATk3VFRWVm9wbmdqOTlUalNuUW4zT2JLOXVQ
         </div>
       </div>
     </section>
+
+  <!-- Projects -->
+<section class="projects bg-purple" id="projects">
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col text-center">
+        <h2>My Projects</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Project WPU-Hut -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/wpu-hutpizza.png" class="card-img-top" alt="WPU-Hut">
+          <div class="card-body">
+            <h5 class="card-title">Menu Hut</h5>
+            <p class="card-text">Website katalog menu makanan dari Pizza Hut. Dibuat dengan HTML dan Bootstrap, menampilkan menu seperti Pizza, Pasta, dan Nasi.</p>
+            <a href="http://localhost/api-erika/wpu-hut/latihan2.html" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project WPU-Movie -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/wpu-movie.png" class="card-img-top" alt="WPU-Movie">
+          <div class="card-body">
+            <h5 class="card-title">Search Movie</h5>
+            <p class="card-text">Website pencarian film menggunakan OMDb API. Menampilkan data film dan detailnya lewat modal popup.</p>
+            <a href="http://localhost/api-erika/wpu-movie/index.html" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project WebCRUD -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/webcrud.png" class="card-img-top" alt="WebCRUD">
+          <div class="card-body">
+            <h5 class="card-title">WebCRUD</h5>
+            <p class="card-text">Website CRUD untuk mendata siswa lulusan MAN 1 Padang Pariaman. Memiliki fitur tambah, edit, hapus, dan ekspor ke Excel.</p>
+            <a href="http://localhost/api-erika/webcrud-main" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
